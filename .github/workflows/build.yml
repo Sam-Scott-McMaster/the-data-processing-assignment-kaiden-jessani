@@ -1,4 +1,4 @@
-name: build script for hello.c 
+name: build script for clean.c 
 on: 
   push:
     branches: [ "main" ] 
@@ -8,7 +8,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4 
       - name: build hello 
-        run: make cleantest; ./cleantest <wbcd >cleaned_wbcd.txt
+        run: make cleantest; ./cleantest <wbcd.txt >cleaned_wbcd.txt
       - name: upload binary 
         uses: actions/upload-artifact@v4 
         with:
