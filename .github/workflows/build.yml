@@ -8,7 +8,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4 
       - name: build hello 
-        run: make cleantest; ./test_script >test_results.txt; gcov cleantest-clean.c
+        run: make cleantest; ./cleantest <wbcd >cleaned_wbcd.txt
       - name: upload binary 
         uses: actions/upload-artifact@v4 
         with:
