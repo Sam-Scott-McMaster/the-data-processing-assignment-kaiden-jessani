@@ -1,2 +1,2 @@
-functions: functions.c
-	gcc -o functions functions.c
+clean: clean.c functions.c
+	gcc -o clean clean.c functions.c -lm
