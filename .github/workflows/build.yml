@@ -7,10 +7,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4 
-      - name: build hello 
+      - name: build cleantest 
         run: make cleantest; ./cleantest <wbcd.txt >cleaned_wbcd.txt
-      - name: upload binary 
-        uses: actions/upload-artifact@v4 
-        with:
-          name: Hello World
-          path: ./hello 
