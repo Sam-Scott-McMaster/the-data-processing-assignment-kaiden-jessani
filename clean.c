@@ -1,8 +1,25 @@
+/*
+ * Program: Data Cleaning Utility
+ * Description: This program reads data, checks for a deletion flag, and cleans the data using either a deletion or imputation strategy.
+ * Author: [Your Name]
+ * Date: [Date]
+ */
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 #include "functions.h"  // Include your header file
 
+/*
+ * Function: main
+ * ----------------------------
+ *   Main function to execute the data cleaning process.
+ *
+ *   argc: Argument count
+ *   argv: Argument vector
+ *
+ *   returns: Exit status of the program
+ */
 int main(int argc, char *argv[]) {
     int rows, cols;
     int delete_flag = 0;
@@ -32,4 +49,5 @@ int main(int argc, char *argv[]) {
 
     return 0;
 }
+
 
